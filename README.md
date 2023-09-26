@@ -1,1 +1,3 @@
-# docker-borgbackup-server
+# Docker BorgBackup Server
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)  [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://hub.docker.com/repository/docker/martinbouillaud/borgbackup-server/general) [![Docker Pulls](https://badgen.net/docker/pulls/martinbouillaud/borgbackup-server?icon=docker&label=pulls)](https://hub.docker.com/r/martinbouillaud/borgbackup-server:latest)  [![Docker Image Size](https://img.shields.io/docker/image-size/martinbouillaud/borgbackup-server?sort=date)](https://hub.docker.com/r/martinbouillaud/borgbackup-server/) [![Github last-commit](https://img.shields.io/github/last-commit/bilyboy785/docker-borgbackup-server)](https://github.com/bilyboy785/docker-borgbackup-server) ![Build & Push](https://github.com/bilyboy785/docker-inotify-command/actions/workflows/build_push.yml/badge.svg)
