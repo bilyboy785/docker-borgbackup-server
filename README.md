@@ -48,3 +48,6 @@ services:
     BORG_APPEND_ONLY: "no"
     BORG_ADMIN: ""
 ```
+## Support
+
+[Buy me a coffe](https://www.buymeacoffee.com/bldwebagency)
