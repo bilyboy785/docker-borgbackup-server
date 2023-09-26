@@ -19,7 +19,7 @@ touch $HOME/dockers/borgbackup-server/sshkeys/clients/macbookpro-perso ## add yo
 ## Environment variables
 | Environment  |  Default value  |  Description |
 |---|---|---|
-| BORG_SERVE_ARGS  |  Empty | See [Documentation](https://borgbackup.readthedocs.io/en/stable/usage/serve.html)  |
+| BORG_SERVE_ARGS  |  Empty | borg serve custom args - See [Documentation](https://borgbackup.readthedocs.io/en/stable/usage/serve.html)  |
 | BORG_APPEND_ONLY | No  |  If set to "yes", only the BORG_ADMIN can delete/prune the other clients archives/repos |
 | BORG_ADMIN  | Empty  |  Filename of Admins SSH-Key; has full access to all repos |
 ## Run the docker with CLI
