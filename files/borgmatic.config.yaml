@@ -1,0 +1,62 @@
+constants:
+  hostname: YOUR_HOSTNAME_HERE
+  home_directory: YOUR_HOME_DIRECTORY_HERE
+
+source_directories:
+    - '{home_directory}'
+
+repositories:
+    - path: YOUR_REPO_HERE
+      label: MYREPO
+
+local_path: /opt/homebrew/bin/borg
+
+one_file_system: true
+read_special: false
+
+exclude_patterns:
+    - '*.pyc'
+    - '{home_directory}/*/.cache'
+    - '*/.vim*.tmp'
+
+exclude_from:
+    - '{home_directory}/.config/borgmatic/borgmatic.exclude'
+
+exclude_caches: true
+exclude_if_present:
+    - .nobackup
+
+exclude_nodump: true
+
+encryption_passphrase: "YOUR_ENCRYPTION_PASSPHRASE_HERE"
+
+compression: lz4
+retries: 3
+retry_wait: 10
+
+ssh_command: 'ssh -i {home_directory}/.ssh/id_rsa'
+
+borg_config_directory: '{home_directory}/.config/borgmatic'
+borg_keys_directory: '{home_directory}/.config/borgmatic/keys'
+
+archive_name_format: '{hostname}-{now:%Y-%m-%d_%H:%M:%S}'
+
+keep_hourly: 24
+keep_daily: 7
+keep_weekly: 4
+keep_monthly: 6
+keep_yearly: 1
+
+checks:
+    - name: repository
+      frequency: 2 weeks
+
+check_repositories:
+    - YOUR_REPOSITORY_HERE
+
+check_last: 2
+
+color: true
+
+healthchecks:
+    ping_url: YOUR_PING_URL_HEALTHCHECK_HERE
