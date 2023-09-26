@@ -2,8 +2,12 @@
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)  [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://hub.docker.com/repository/docker/martinbouillaud/borgbackup-server/general) [![Docker Pulls](https://badgen.net/docker/pulls/martinbouillaud/borgbackup-server?icon=docker&label=pulls)](https://hub.docker.com/r/martinbouillaud/borgbackup-server:latest)  [![Docker Image Size](https://img.shields.io/docker/image-size/martinbouillaud/borgbackup-server?sort=date)](https://hub.docker.com/r/martinbouillaud/borgbackup-server/) [![Github last-commit](https://img.shields.io/github/last-commit/bilyboy785/docker-borgbackup-server)](https://github.com/bilyboy785/docker-borgbackup-server) ![Build & Push](https://github.com/bilyboy785/docker-borgbackup-server/actions/workflows/build-push.yml/badge.svg)
 
+Docker image with Borg Backup Server based on Debian slim (trixie) and *borgbackup 1.2.6*.
+
 ## Images
  * [borgbackup-server:latest](https://hub.docker.com/layers/martinbouillaud/borgbackup-server/latest/images/sha256-90760dc36730d7f94ebe736db8d37ef2f0c45828728fcf46aa5335f260deca3b?context=repo) (Available for amd64 and arm64)
+ * [borgbackup-server:trixie-1.2.6](https://hub.docker.com/layers/martinbouillaud/borgbackup-server/trixie-1.2.6/images/sha256-90760dc36730d7f94ebe736db8d37ef2f0c45828728fcf46aa5335f260deca3b?context=repo) (Available for amd64 only)
+ * [borgbackup-server:sid-1.2.6](https://hub.docker.com/layers/martinbouillaud/borgbackup-server/sid-1.2.6/images/sha256-802115843343ae05a2ef4525eac8c7564754547cdc69cf168481001e7aba5f60?context=repo) (Available for amd64 only)
 
 ## Prepare your environment
 ```
